@@ -1,0 +1,30 @@
+What is your name (First name and Last name)?,What is your Northeastern email address?,Level of experience with C++?,Level of experience with gdb?,Any experience with Project Management or Leadership?,"Are there any other students in your section that you do NOT want to work with? You need not explain why, just names is fine.",Are there any other students that you would like to work with? They must be in the same section as you. Please specify 1-3 names.
+Fedor Something,Fedo.g@northeastern.edu,Intermediate,Intermediate,No,,
+Tanya John,Tany.n@northeastern.edu,Intermediate,Intermediate,Yes,,Jack McCay
+Kyle Hay,Kyle.y@northeastern.edu,Novice1,Novice2,Yes,,
+Rahul Sara,Rahu.a@northeastern.edu,Novice,Novice,No,N/A,
+Grant Bee,Gran.e@northeastern.edu,Novice,Novice,No,Anna Haji Alex Sun,Aritra Sun Khalil Cho
+Sunny Gump,Sunn.p@northeastern.edu,Intermediate,Novice,Yes,,
+Yu-Ting (Tony) Pe,Yu-T.e@northeastern.edu,Novice,Novice,Yes,,
+Aritra Sun,Arit.n@northeastern.edu,Intermediate,Intermediate,No,,
+Anna Haji,Anna.i@northeastern.edu,Intermediate,Novice,No,,
+Jack McCay,Jack.y@northeastern.edu,Intermediate,Intermediate,Yes,Andrew Brady,
+Andrew Brady,Andr.y@northeastern.edu,Advanced,Advanced,Yes,,
+Mara hasselback,Mara.k@northeastern.edu,Intermediate,Novice,Yes,,
+Khalil Cho,Khal.o@northeastern.edu,Intermediate,Intermediate,No,,Alex Sun Nining Chin Joshua Ne
+Mitchell Grey,Mitc.y@northeastern.edu,Advanced,Novice,Yes,,
+Alex Sun,Alex.n@northeastern.edu,Novice,Novice,No,,Fedor Something Tanya John
+Joshua Ne,Josh.e@northeastern.edu,Novice,Novice,Yes,,Tanya John Kyle Hay
+Spenser Spencer,Spen.r@northeastern.edu,Intermediate,Novice,No,,Kyle Hay Rahul Sara
+NIngyu Chin,NIng.n@northeastern.edu,Intermediate,Intermediate,No,N/A,Rahul Sara Grant Bee
+Cheng Ci,Chen.o@northeastern.edu,Intermediate,Novice,No,None,Grant Bee Sunny Gump
+Gabriel Angle,Gabr.e@northeastern.edu,Intermediate,Novice,No,,Sunny Gump Yu-Ting(Tony) Pe
+Vevey Zhe,Veve.e@northeastern.edu,Novice,Intermediate,Yes,,Yu-Ting(Tony) Pe Aritra Sun Fedor Something Tanya John
+Jayvardan Nandu,Jayv.u@northeastern.edu,Intermediate,Novice,Yes,Zachary Bush,Aritra Sun Anna Haji Tanya John Kyle Hay
+Brandon Borden,Bran.n@northeastern.edu,Intermediate,Intermediate,No,Jayvardan Nandu,Anna Haji Jack McCay Kyle Hay Rahul Sara
+Mary Makey,Mary.y@northeastern.edu,Novice,Novice,Yes,,Jack McCay Andrew Brady Rahul Sara Grant Bee
+Thomas Li,Thom.i@northeastern.edu,Novice,Novice,Yes,,Andrew Brady Mara hasselback Grant Bee Sunny Gump
+Mia Tom,Mia .m@northeastern.edu,Novice,Intermediate,No,,Mara hasselback Khalil Cho Sunny Gump Yu-Ting(Tony) Pe
+Zachary Bush,Zach.h@northeastern.edu,Intermediate,Novice,No,Mia Tom Jack Palen Ben Roth,Khalil Cho Mitchell Grey Yu-Ting(Tony) Pe Aritra Sun
+Jack Palen,Jack.n@northeastern.edu,Advanced,Advanced,Yes,,Mitchell Grey Alex Sun Aritra Sun Anna Haji
+Ben Roth,Ben .h@northeastern.edu,Novice,Novice,Yes,,Alex Sun Joshua Ne Anna Haji Jack McCay
