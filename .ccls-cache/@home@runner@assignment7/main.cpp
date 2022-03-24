@@ -111,7 +111,8 @@ int main() {
 
   vector<string> priority_student_names;
 
- for (int i = 0; i < students.size();i ++) {
+
+  for (int i = 0; i < students.size();i ++) {
    if (students.at(i).students_not_with.size() != 0) {
      for (int j = 0; j < students.at(i).students_not_with.size(); j ++) {
        add_student_by_name(students.at(i).students_not_with.at(j),priority_student_names);
@@ -131,4 +132,20 @@ int main() {
   for (int i = 0; i <priority_student.size();i ++) {
     cout << priority_student.at(i).name << endl;
   }
+
+  for (int i = 0; i < priority_student.size();i ++) {
+    for (int j = 0; j < groups.size(); j ++) {
+      
+    if (check_appropriate(priority_student.at(i),groups.at(j))) {
+    move_into_group(priority_student.at(i),&groups.at(j));
+     break;
+    }
+  }
 }
+
+  print_groups(groups);
+
+  for (int i = 0; i < groups.size(); i ++) {
+    cout <<groups.at(i).group_students.size() << endl;
+  }
+  }

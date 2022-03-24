@@ -22,5 +22,7 @@ string print_names(Group);
 
 void add_student_by_name(string ,vector<string> &names);
 
+bool check_appropriate(Student, Group);
 
+void move_into_group(Student,Group *g);
 #endif 
