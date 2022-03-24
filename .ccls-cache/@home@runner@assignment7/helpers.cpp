@@ -48,7 +48,7 @@ bool checkManagement(string line) {
 
 }
 
-//get the number of groups with n number of people
+
 int split_group_n(int total_number, int number) {
   int max_groups = total_number / number + 1;
   

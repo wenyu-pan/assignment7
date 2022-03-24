@@ -5,6 +5,7 @@
 #include <algorithm>
 #include "student.hpp"
 #include "helpers.hpp"
+#include "group.hpp"
 using namespace std;
 
 int main() {
@@ -12,6 +13,9 @@ int main() {
   infile.open("input.csv");
   string line_2;
   getline(infile,line_2);
+
+  int number_of_groups;
+  int number_of_n_minus_one_gourps;
 
 
   vector<Student> students;
@@ -79,23 +83,27 @@ int main() {
 
   else {
   
-  int number_of_groups = split_group_n(students.size(),number_each_group);
+   number_of_groups = split_group_n(students.size(),number_each_group);
   cout << "Number of n-people groups: " << number_of_groups << endl;
-  int number_of_n_minus_one_gourps = split_group_n_1(students.size(),number_each_group);
+  number_of_n_minus_one_gourps = split_group_n_1(students.size(),number_each_group);
   cout << "Number of (n-1)-people groups: " << number_of_n_minus_one_gourps << endl;
     }
 
+  vector<Group> groups (number_of_groups + number_of_n_minus_one_gourps); 
+
+  for (int i = 0; i < groups.size(); i ++) {
+    groups.at(i).name = "Group " + to_string(i + 1);
+  }
+
+  cout << groups.at(0).name << endl;
+
+  print_groups(groups);
 
 
 
 
 
 
-
-    
-    
-
-  
 
   
 }
