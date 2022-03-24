@@ -10,4 +10,8 @@ int checkLevel(string);
 
 bool checkManagement(string);
 
+int split_group_n(int, int);
+
+int split_group_n_1(int,int);
+
 #endif 

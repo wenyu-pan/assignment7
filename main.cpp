@@ -64,32 +64,36 @@ int main() {
     s.students_with = temp_4;
       }
 
+    students.push_back(s);
+    }
 
+    cout << "Total number of students: " << students.size() << endl;
+    cout << "Please enter the number of students you want to have in each group: (A ideal group should have a size between 2 and 5)" << endl;
+    string s1;
+    cin >> s1;
+    int number_each_group = stoi(s1);
 
-
-
-
-
-
-    
-    cout << s.name << endl;
-    cout << s.email << endl;
-    cout << s.cpp_experience << endl;
-    cout << s.gdb_experience << endl;
-    cout << s.proj_management << endl;
-    for (int i = 0; i < s.students_not_with.size(); i ++) {
-      cout << "Student not with: " << s.students_not_with.at(i) << endl;;
-      }
-    cout << endl;
-
-    for (int i = 0; i < s.students_with.size(); i ++) {
-      cout << "Student with: " << s.students_with.at(i) << endl;
-      }
-    cout << endl;
-    
-
+  if (number_each_group > 5 || number_each_group < 2) {
+    cout << "The number you entered is invalid" << endl;
   }
+
+  else {
   
+  int number_of_groups = split_group_n(students.size(),number_each_group);
+  cout << "Number of n-people groups: " << number_of_groups << endl;
+  int number_of_n_minus_one_gourps = split_group_n_1(students.size(),number_each_group);
+  cout << "Number of (n-1)-people groups: " << number_of_n_minus_one_gourps << endl;
+    }
+
+
+
+
+
+
+
+
+    
+    
 
   
 

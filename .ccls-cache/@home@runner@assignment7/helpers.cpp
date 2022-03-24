@@ -3,6 +3,8 @@
 #include <vector>
 #include <iterator>
 #include <algorithm>
+#include <stdio.h>     
+#include <math.h>
 #include "helpers.hpp"
 using namespace std;
 vector<string> readIntoVector(string s1,string space_delimiter) {
@@ -44,4 +46,33 @@ bool checkManagement(string line) {
         return false;
       }
 
+}
+
+//get the number of groups with n number of people
+int split_group_n(int total_number, int number) {
+  int max_groups = total_number / number + 1;
+  
+  
+  int number_of_n_minus_one_gourps = max_groups * number - total_number;
+
+  
+  int number_of_n_groups = (total_number - number_of_n_minus_one_gourps * (number - 1)) / number;
+
+  
+  return number_of_n_groups;
+  
+}
+
+int split_group_n_1(int total_number, int number) {
+  int max_groups = total_number / number + 1;
+  
+  
+  int number_of_n_minus_one_gourps = max_groups * number - total_number;
+
+  
+  int number_of_n_groups = (total_number - number_of_n_minus_one_gourps * (number - 1)) / number;
+
+  
+  return number_of_n_minus_one_gourps;
+  
 }
