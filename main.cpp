@@ -148,4 +148,13 @@ int main() {
   for (int i = 0; i < groups.size(); i ++) {
     cout <<groups.at(i).group_students.size() << endl;
   }
+
+  vector<Student> other_students;
+  for (int i = 0; i < students.size(); i ++) {
+    if (!count(priority_student_names.begin(),priority_student_names.end(),students.at(i).name)) {
+      other_students.push_back(students.at(i));
+    }
+  }
+  
+  
   }

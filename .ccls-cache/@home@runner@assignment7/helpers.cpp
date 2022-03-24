@@ -57,10 +57,7 @@ int split_group_n(int total_number, int number) {
 
   
   int number_of_n_groups = (total_number - number_of_n_minus_one_gourps * (number - 1)) / number;
-
-  
   return number_of_n_groups;
-  
 }
 
 int split_group_n_1(int total_number, int number) {
