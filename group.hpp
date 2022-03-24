@@ -8,11 +8,10 @@ using namespace std;
 
 struct Group {
     string name;
+    int size;
     vector<Student> group_students;
     int accu_score;
-    double average_cpp_score;
-    double average_gdb_score;
-    double average_management_score;
+    double accu_average_score;
 };
 
 vector<Group> initialize_group(int, int);
@@ -20,5 +19,8 @@ vector<Group> initialize_group(int, int);
 void print_groups(vector<Group>);
 
 string print_names(Group);
+
+void add_student_by_name(string ,vector<string> &names);
+
 
 #endif 

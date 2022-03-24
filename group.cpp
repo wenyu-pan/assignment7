@@ -33,3 +33,9 @@ string print_names(Group p) {
     }
   return res;
 }
+
+void add_student_by_name(string name,vector<string> &names) {
+  if (!count(names.begin(), names.end(), name)) {
+    names.push_back(name);
+  }
+ }

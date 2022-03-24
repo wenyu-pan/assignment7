@@ -15,4 +15,7 @@ struct Student {
     vector<string> students_with;
 };
 
+
+Student search_by_name(vector<Student> &n,string s);
+
 #endif /* student_h */

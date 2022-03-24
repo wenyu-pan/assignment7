@@ -22,9 +22,9 @@ int main() {
 
     
 
-  while (infile.good()) {
-    string line;
-    getline(infile,line);
+ 
+  string line;
+  while (getline(infile,line)) {
   
     vector<string> temp;
     vector<string> temp_1;
@@ -95,16 +95,40 @@ int main() {
     groups.at(i).name = "Group " + to_string(i + 1);
   }
 
-  cout << groups.at(0).name << endl;
+  for (int i = 0; i < number_of_groups; i ++) {
+    groups.at(i).size = number_each_group;
+  }
 
-  print_groups(groups);
+  for (int j = number_of_groups; j < groups.size(); j ++) {
+    groups.at(j).size = number_each_group - 1;
+  }
 
+  for (int i = 0; i < groups.size(); i ++) {
+    cout << groups.at(i).name << ": " <<groups.at(i).size << endl;
+  }
 
+  vector<Student> priority_student;
 
+  vector<string> priority_student_names;
 
-
-
+ for (int i = 0; i < students.size();i ++) {
+   if (students.at(i).students_not_with.size() != 0) {
+     for (int j = 0; j < students.at(i).students_not_with.size(); j ++) {
+       add_student_by_name(students.at(i).students_not_with.at(j),priority_student_names);
+     }
+     add_student_by_name(students.at(i).name,priority_student_names);
+   }
+ }
 
   
-}
 
+  for (int i = 0; i < students.size(); i ++) {
+    if (count(priority_student_names.begin(),priority_student_names.end(),students.at(i).name )) {
+      priority_student.push_back(students.at(i));
+    }
+  }
+
+  for (int i = 0; i <priority_student.size();i ++) {
+    cout << priority_student.at(i).name << endl;
+  }
+}
