@@ -156,5 +156,10 @@ int main() {
     }
   }
   
-  
+  for (int i = 0; i < other_students.size(); i ++) {
+    vector<int> cu_score;
+    for (int j = 0; j < groups.size(); j ++) {
+      int personal_score = score(other_students.at(i));
+    }
+  }
   }

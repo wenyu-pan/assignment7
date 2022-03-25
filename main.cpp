@@ -145,9 +145,6 @@ int main() {
 
   print_groups(groups);
 
-  for (int i = 0; i < groups.size(); i ++) {
-    cout <<groups.at(i).group_students.size() << endl;
-  }
 
   vector<Student> other_students;
   for (int i = 0; i < students.size(); i ++) {
@@ -155,6 +152,31 @@ int main() {
       other_students.push_back(students.at(i));
     }
   }
+
   
+  for (int i = 0; i < groups.size(); i ++) {
+    if (groups.at(i).group_students.size() == 0) {      move_into_group(other_students.at(i),&groups.at(i));
+      priority_student.push_back(other_students.at(i));
+      priority_student_names.push_back(other_students.at(i).name);
+    }
+  }
+
+  vector<Student> left_students;
+  for (int i = 0; i < students.size(); i ++) {
+    if (!count(priority_student_names.begin(),priority_student_names.end(),students.at(i).name)) {
+      left_students.push_back(students.at(i));
+    }
+  }
+  cout << left_students.size() << endl;
+
   
+
+  print_groups(groups);
+  
+  for (int i = 0; i < other_students.size(); i ++) {
+    vector<int> cu_score;
+    for (int j = 0; j < groups.size(); j ++) {
+      int personal_score = score(other_students.at(i));
+    }
+  }
   }

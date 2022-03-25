@@ -18,4 +18,6 @@ struct Student {
 
 Student search_by_name(vector<Student> &n,string s);
 
+int score(Student);
+
 #endif /* student_h */
